@@ -31,8 +31,8 @@ const unsigned long GATE_OPEN_TIME = 2000;
 bool gateOpen = false;
 
 // WiFi údaje - ZMEŇ NA SVOJE
-char ssid[] = "TVOJE_WIFI_MENO";      // ← sem napíš meno WiFi
-char pass[] = "TVOJE_WIFI_HESLO";     // ← sem napíš heslo WiFi
+char ssid[] = "Sem napíš presné meno tvojej WiFi";      // ← sem napíš meno WiFi
+char pass[] = "Sem napíš heslo k tvojej WiFi";     // ← sem napíš heslo WiFi
 
 BlynkTimer timer;
 
