@@ -1,7 +1,9 @@
 Inteligentné parkovisko
 
 Terézia Tomášová: hardwér
+
 Jakub Zádrapa: softvér
+
 Tobias Lacher: dokumentácia
 
 Cieľ projektu: Cieľom projektu je zefektívniť parkovanie, znížiť čas potrebný na hľadanie voľného miesta a zlepšiť organizáciu dopravy. 
