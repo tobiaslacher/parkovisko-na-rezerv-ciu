@@ -9,11 +9,18 @@ prehľad o aktuálnom stave parkoviska, napríklad:
  - koľko parkovacích miest je voľných,
  - aktuálnu obsadenosť parkoviska.
 
-Použitá platforma: ESP32,
+Použitá platforma: ESP32, arduino rozhranie
 
-Použité komponenty: ESP32,  nepájivé pole, prepojovacie vodiče
+Použité komponenty: ESP32,  nepájivé pole, prepojovacie vodiče, senzor pohybu, OLED displej, LED diody, Servo, IR senzory infračervené
 
 Princíp činnosti: 
+Systém je riadený mikrokontrolérom ESP32, ktorý je pripojený na Wi-Fi sieť a neustále monitoruje IR senzory umiestnené pri vstupe a výstupe parkoviska.
+
+Pri zaznamenaní vozidla vstupným senzorom systém vyhodnotí dostupnosť voľných parkovacích miest. Ak je miesto voľné, ESP32 vyšle signál servomotoru, ktorý otvorí rampu. Zároveň sa zníži počet voľných miest, aktualizuje sa údaj na OLED displeji a zmena sa odošle na webovú stránku, kde sa zobrazí aktuálny stav parkoviska v reálnom čase.
+
+Pri odchode vozidla výstupný senzor zaznamená pohyb, rampa sa opäť otvorí, počet voľných miest sa zvýši a systém aktualizuje všetky zobrazené informácie.
+
+Po uplynutí nastaveného časového intervalu sa rampa automaticky zatvorí. Celý proces prebieha automaticky bez potreby manuálneho zásahu používateľa.
 
 Význam projektu: Projekt inteligentného parkoviska má praktické využitie v moderných mestách, obchodných centrách, univerzitách či administratívnych budovách.
 
